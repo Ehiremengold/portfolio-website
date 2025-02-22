@@ -96,7 +96,7 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl font-semibold text-center">
               15+
             </h1>
-            <p className="subtle-text !text-xl dark:text-white">
+            <p className=" subtle-text !text-xl dark:text-white text-center">
               Products from Idea to Launch
             </p>
           </motion.div>
