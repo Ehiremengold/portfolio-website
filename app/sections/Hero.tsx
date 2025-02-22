@@ -96,8 +96,8 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl font-semibold text-center">
               15+
             </h1>
-            <p className="subtle-text !text-xl whitespace-nowrap dark:text-white">
-              Clean UIs
+            <p className="subtle-text !text-xl dark:text-white">
+              Products from Idea to Launch
             </p>
           </motion.div>
           <motion.div
@@ -130,8 +130,8 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl font-semibold text-center dark:text-white">
               8+
             </h1>
-            <p className="subtle-text !text-xl whitespace-nowrap dark:text-white">
-              Satisfied clients
+            <p className="subtle-text !text-xl dark:text-white text-center">
+              Satisfied Brands
             </p>
           </motion.div>
         </div>
