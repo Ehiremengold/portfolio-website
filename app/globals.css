@@ -17,7 +17,7 @@ body {
   }
 
   .sections {
-    @apply sm:py-44 py-16 px-5 bg-white font-poppins dark:bg-darkMode text-black dark:text-white;
+    @apply sm:py-32 py-16 px-5 bg-white font-poppins dark:bg-darkMode text-black dark:text-white;
   }
   .section-heading {
     @apply font-semibold text-xl sm:text-3xl mt-4 mb-4;
