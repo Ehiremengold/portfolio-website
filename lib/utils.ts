@@ -37,6 +37,16 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/Ehiremengold/real-estate-landing-page.git",
     liveURL: "https://real-estate-nu-taupe.vercel.app",
   },
+
+  {
+    name: "Borderless | Fintech Landing Page",
+    description:
+      "Discover innovative financial solutions with our sleek and user-friendly fintech platform. Secure, efficient, and designed for growth.",
+    img: projectImg.fintech,
+    github: "https://github.com/Ehiremengold/borderless-landing-page.git",
+    liveURL: "borderless-landing-page-plum.vercel.app",
+  },
+
   {
     name: "Forcythe-clone",
     description:
@@ -45,14 +55,14 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/Ehiremengold/forycthe-clone.git",
     liveURL: "https://forycthe-clone.vercel.app",
   },
-  {
-    name: "Career Launch Pad Landing Page",
-    description:
-      "Want to begin a career in tech? Look no further as we show you the ropes even if you want to remain...",
-    img: projectImg.stack,
-    github: "https://github.com/Ehiremengold/stackwisr-uk.git",
-    liveURL: "https://stackwisr-uk.vercel.app",
-  },
+  // {
+  //   name: "Career Launch Pad Landing Page",
+  //   description:
+  //     "Want to begin a career in tech? Look no further as we show you the ropes even if you want to remain...",
+  //   img: projectImg.stack,
+  //   github: "https://github.com/Ehiremengold/stackwisr-uk.git",
+  //   liveURL: "https://stackwisr-uk.vercel.app",
+  // },
 ];
 
 export const experienceData: ExperienceData[] = [
