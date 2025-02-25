@@ -39,7 +39,7 @@ const About = () => {
             optimizing workflows, and sharing knowledge within the tech
             community. Whether it&apos;s crafting an intuitive UI, designing
             robust backend systems, or implementing CI/CD pipelines, I bring a
-            problem-solving mindset to every project.Let’s build something
+            problem-solving mindset to every project. Let’s build something
             amazing together! 🚀
           </p>
         </article>

@@ -12,7 +12,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Ehis.dev | Portfolio",
   description:
-    "Software Engineer | Fullstack Developer | React & Django Expert | Browse projects and insights from Ehis Ehiremen's tech journey.",
+    "Software Engineer | Frontend Developer | Landing Page Expert | Browse projects and insights from Ehis's tech journey.",
 };
 
 export default function RootLayout({
