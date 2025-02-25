@@ -5,7 +5,7 @@ import * as motion from "motion/react-client";
 const Hero = () => {
   return (
     <section className="bg-white  dark:bg-slate-950 font-poppins">
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-2 pt-14 lg:px-10">
         {/* Background Shape - Top */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -29,7 +29,7 @@ const Hero = () => {
               height={100}
               width={100}
             />
-            <AvatarFallback>profile picture</AvatarFallback>
+            <AvatarFallback className="h-25 w-25 rounded-full bg-slate-600"></AvatarFallback>
           </Avatar>
 
           <div className="hidden sm:mb-5 sm:flex sm:justify-center">
@@ -48,13 +48,15 @@ const Hero = () => {
             }}
             className="text-center"
           >
-            <h1 className="sm:text-6xl/normal text-2xl/normal dark:text-white font-semibold text-gray-900">
-              Building <span className="text-primary">Digital</span> Solutions.
+            <h1 className="md:text-6xl/normal sm:text-4xl/normal text-3xl/normal dark:text-white font-semibold text-gray-900">
+              Bringing ideas to life, one
+              <span className="text-primary">&nbsp;pixel</span> at a time.
             </h1>
             <p className="dark:text-white subtle-text text-black !mt-6">
-              Expert web development and design services. From sleek websites
-              and e-commerce platforms to custom web applications, I provide
-              end-to-end solutions to elevate your business online.
+              Hey there! I’m a front-end developer who loves turning creative
+              ideas into vibrant, user-friendly websites. If you’re ready to
+              make a real splash online, let’s team up and bring your vision to
+              life.
             </p>
 
             <button className="mx-auto mt-10 relative py-3 text-[15px] tracking-wider font-medium overflow-hidden rounded-lg bg-primary shadow-lg shadow-[#4F39F6]/30 text-white transition-all duration-300 group btn-primary flex items-center justify-center w-52 h-auto">
@@ -82,9 +84,9 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="gap-9 mx-auto flex flex-col sm:flex-row justify-center items-center">
+        <div className="container gap-6 pl-2 pr-2 lg:pl-0 lg:pr-0 flex flex-col md:flex-row justify-center md:items-stretch items-center">
           <motion.div
-            className="shadow-xl px-10 py-7 w-[234px] rounded-xl flex flex-col gap-5 justify-center items-center text-black dark:text-white dark:bg-[#1B1631] dark:shadow-2xl"
+            className="shadow-xl px-10 py-7 w-[234px] flex-1 rounded-xl flex flex-col gap-5 justify-center items-center text-black dark:text-white dark:bg-[#1B1631] dark:shadow-2xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -96,12 +98,12 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl font-semibold text-center">
               15+
             </h1>
-            <p className=" subtle-text !text-xl dark:text-white text-center">
+            <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center line-clamp-2">
               Products from Idea to Launch
             </p>
           </motion.div>
           <motion.div
-            className="shadow-xl px-10 py-7 w-[234px] rounded-xl flex flex-col gap-5 text-black dark:bg-[#1B1631]"
+            className="shadow-xl px-10 py-7 w-[234px] flex-1 rounded-xl flex flex-col gap-5 justify-center items-center text-black dark:text-white dark:bg-[#1B1631] dark:shadow-2xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -110,15 +112,15 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="text-4xl sm:text-5xl font-semibold text-center dark:text-white">
+            <h1 className="text-4xl sm:text-5xl font-semibold text-center">
               4+
             </h1>
-            <p className="subtle-text !text-xl text-center dark:text-white">
+            <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center line-clamp-2">
               Years of Experience
             </p>
           </motion.div>
           <motion.div
-            className="shadow-xl px-10 py-7 w-[234px] rounded-xl flex flex-col gap-5 text-black dark:bg-[#1B1631]"
+            className="shadow-xl px-10 py-7 w-[234px] flex-1 rounded-xl flex flex-col gap-5 justify-center items-center text-black dark:text-white dark:bg-[#1B1631] dark:shadow-2xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -127,10 +129,10 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="text-4xl sm:text-5xl font-semibold text-center dark:text-white">
+            <h1 className="text-4xl sm:text-5xl font-semibold text-center">
               8+
             </h1>
-            <p className="subtle-text !text-xl dark:text-white text-center">
+            <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center">
               Satisfied Brands
             </p>
           </motion.div>

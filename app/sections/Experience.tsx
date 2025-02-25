@@ -52,7 +52,7 @@ const Experience = () => {
                         {item.title}
                       </h5>
                       <p
-                        className={`subtle-text !text-base ${
+                        className={`subtle-text !text-base lg:text-left text-justify ${
                           index !== 0 ? "dark:text-slate-600 text-slate-400" : "text-white"
                         }`}
                       >

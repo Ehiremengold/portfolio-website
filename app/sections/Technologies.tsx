@@ -50,27 +50,18 @@ const Technologies = () => {
         </motion.h1>
 
         <motion.p
-          className="subtle-text !text-base dark:!text-slate-200 text-black"
+          className="subtle-text !text-base dark:!text-slate-200 text-black lg:text-left text-justify"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          A dynamic problem solver with over 3 years of programming experience,
+          A dynamic problem solver with over 4 years of programming experience,
           I have worked with various languages, libraries, and technology
           stacks, refining my expertise in frontend, backend, and app
           development.
         </motion.p>
 
-        <motion.p
-          className="subtle-text !text-base dark:!text-slate-200 text-black"
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          Always eager to learn and quick to adapt, I thrive on mastering new
-          technologies and expanding my skill set in the ever-evolving world of
-          tech.
-        </motion.p>
+      
 
         <div className="space-y-8 mt-6">
           {/* Frontend Tools */}
