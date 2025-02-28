@@ -22,6 +22,14 @@ type ProjectData = {
 
 export const projectData: ProjectData[] = [
   {
+    name: "Burgry Restaurant",
+    description:
+      "This Project would make you Crave juicy burgers! Enjoy fresh, 'Flavorful' micro-interactions and animations using framer motion and Tailwind css.",
+    img: projectImg.burgry,
+    github: "https://github.com/Ehiremengold/burgry-restaurant.git",
+    liveURL: "http://burgry-restaurant.vercel.app",
+  },
+  {
     name: "Nike Clone Landing Page",
     description:
       "A visually stunning and responsive landing page for Nike, built with React, Tailwind CSS, and Framer Motion. It features sleek animations, reusable components, and a modern design optimized for all devices. Perfect for showcasing products, special offers, and customer testimonials.",
@@ -55,14 +63,14 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/Ehiremengold/forycthe-clone.git",
     liveURL: "https://forycthe-clone.vercel.app",
   },
-  // {
-  //   name: "Career Launch Pad Landing Page",
-  //   description:
-  //     "Want to begin a career in tech? Look no further as we show you the ropes even if you want to remain...",
-  //   img: projectImg.stack,
-  //   github: "https://github.com/Ehiremengold/stackwisr-uk.git",
-  //   liveURL: "https://stackwisr-uk.vercel.app",
-  // },
+  {
+    name: "Career Launch Pad Landing Page",
+    description:
+      "Want to begin a career in tech? Look no further as we show you the ropes even if you want to remain...",
+    img: projectImg.stack,
+    github: "https://github.com/Ehiremengold/stackwisr-uk.git",
+    liveURL: "https://stackwisr-uk.vercel.app",
+  },
 ];
 
 export const experienceData: ExperienceData[] = [
