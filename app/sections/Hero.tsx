@@ -3,7 +3,6 @@ import { AvatarImage, Avatar, AvatarFallback } from "../components/ui/avatar";
 import * as motion from "motion/react-client";
 import { NumberTicker } from "../components/number-ticker";
 import { AnimatedGradientText } from "../components/animated-gradient-text";
-import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 const Hero = () => {
   return (
