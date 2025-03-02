@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-1: 0 100% 63%;
+  --color-2: 270 100% 63%;
+  --color-3: 210 100% 63%;
+  --color-4: 195 100% 63%;
+  --color-5: 90 100% 63%;
+}
+
 body {
   scroll-behavior: smooth;
   max-width: 2100px;
@@ -25,4 +33,16 @@ body {
   .custom-card {
     @apply rounded-xl space-y-4 py-5 px-6 flex flex-col items-start dark:ring-1 dark:ring-white shadow-lg;
   }
+}
+
+@layer base {
+}
+
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+  /* body {
+    @apply bg-background text-foreground;
+  } */
 }

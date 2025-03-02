@@ -1,7 +1,10 @@
 import profile from "../../public/profile.jpg";
 import { AvatarImage, Avatar, AvatarFallback } from "../components/ui/avatar";
 import * as motion from "motion/react-client";
-
+import { NumberTicker } from "../components/number-ticker";
+import { AnimatedGradientText } from "../components/animated-gradient-text";
+import { ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 const Hero = () => {
   return (
     <section className="bg-white  dark:bg-slate-950 font-poppins">
@@ -32,11 +35,24 @@ const Hero = () => {
             <AvatarFallback className="h-25 w-25 rounded-full bg-slate-600"></AvatarFallback>
           </Avatar>
 
-          <div className="hidden sm:mb-5 sm:flex sm:justify-center">
-            <div className="flex items-center justify-center gap-3 rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/30 dark:ring-white hover:ring-gray-900/20">
-              <span className="animate-wave text-2xl">👋</span>
-              <p className="dark:text-white text-black">Hey you, Welcome!</p>
-            </div>
+          <div className="w-fit group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
+            <span
+              className={cn(
+                "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]"
+              )}
+              style={{
+                WebkitMask:
+                  "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                WebkitMaskComposite: "destination-out",
+                mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                maskComposite: "subtract",
+                WebkitClipPath: "padding-box",
+              }}
+            />
+            🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
+            <AnimatedGradientText className="text-sm font-medium">
+              Hey you, Welcome
+            </AnimatedGradientText>
           </div>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -49,9 +65,12 @@ const Hero = () => {
             className="text-center"
           >
             <h1 className="md:text-6xl/normal sm:text-4xl/normal text-3xl/normal dark:text-white font-semibold text-gray-900">
-              Bringing ideas to life, one
-              <span className="text-primary">&nbsp;pixel</span> at a time.
+              Bringing ideas to life, one&nbsp;
+              <span className="text-primary">pixel</span> at a time.
             </h1>
+            {/* <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
+              Ship <AuroraText>beautiful</AuroraText>
+            </h1> */}
             <p className="dark:text-white subtle-text text-black !mt-6">
               Hey there! I’m a front-end developer who loves turning creative
               ideas into vibrant, user-friendly websites. If you’re ready to
@@ -95,9 +114,9 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="text-4xl sm:text-5xl font-semibold text-center">
-              15+
-            </h1>
+            <span className="text-4xl sm:text-5xl font-semibold text-center flex gap-1 items-center">
+              <NumberTicker value={15} />+
+            </span>
             <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center line-clamp-2">
               Products from Idea to Launch
             </p>
@@ -112,9 +131,9 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="text-4xl sm:text-5xl font-semibold text-center">
-              4+
-            </h1>
+            <span className="text-4xl sm:text-5xl font-semibold text-center flex gap-1 items-center">
+              <NumberTicker value={4} />+
+            </span>
             <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center line-clamp-2">
               Years of Experience
             </p>
@@ -129,9 +148,9 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="text-4xl sm:text-5xl font-semibold text-center">
-              8+
-            </h1>
+            <span className="text-4xl sm:text-5xl font-semibold text-center flex gap-1 items-center">
+              <NumberTicker value={8} />+
+            </span>
             <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center">
               Satisfied Brands
             </p>

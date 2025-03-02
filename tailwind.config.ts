@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class", // Fixed duplicate array issue
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,25 +13,107 @@ const config: Config = {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
       },
-      keyframes: {
-        wave: {
-          "0%": { transform: "rotate(0.0deg)" },
-          "15%": { transform: "rotate(14.0deg)" },
-          "30%": { transform: "rotate(-8.0deg)" },
-          "40%": { transform: "rotate(14.0deg)" },
-          "50%": { transform: "rotate(-4.0deg)" },
-          "60%": { transform: "rotate(10.0deg)" },
-          "70%": { transform: "rotate(0.0deg)" },
-          "100%": { transform: "rotate(0.0deg)" },
-        },
-      },
-      animation: {
-        wave: "wave 1.5s infinite",
-      },
       colors: {
         primary: "#4F39F6",
         secondary: "#1B1631",
         darkMode: "#020617",
+        "color-1": "hsl(var(--color-1))",
+        "color-2": "hsl(var(--color-2))",
+        "color-3": "hsl(var(--color-3))",
+        "color-4": "hsl(var(--color-4))",
+        "color-5": "hsl(var(--color-5))",
+      },
+      keyframes: {
+        "aurora-border": {
+          "0%, 100%": {
+            borderRadius: "37% 29% 27% 27% / 28% 25% 41% 37%",
+          },
+          "25%": {
+            borderRadius: "47% 29% 39% 49% / 61% 19% 66% 26%",
+          },
+          "50%": {
+            borderRadius: "57% 23% 47% 72% / 63% 17% 66% 33%",
+          },
+          "75%": {
+            borderRadius: "28% 49% 29% 100% / 93% 20% 64% 25%",
+          },
+        },
+        "aurora-1": {
+          "0%, 100%": {
+            top: "0",
+            right: "0",
+          },
+          "50%": {
+            top: "50%",
+            right: "25%",
+          },
+          "75%": {
+            top: "25%",
+            right: "50%",
+          },
+        },
+        "aurora-2": {
+          "0%, 100%": {
+            top: "0",
+            left: "0",
+          },
+          "60%": {
+            top: "75%",
+            left: "25%",
+          },
+          "85%": {
+            top: "50%",
+            left: "50%",
+          },
+        },
+        "aurora-3": {
+          "0%, 100%": {
+            bottom: "0",
+            left: "0",
+          },
+          "40%": {
+            bottom: "50%",
+            left: "25%",
+          },
+          "65%": {
+            bottom: "25%",
+            left: "50%",
+          },
+        },
+        "aurora-4": {
+          "0%, 100%": {
+            bottom: "0",
+            right: "0",
+          },
+          "50%": {
+            bottom: "25%",
+            right: "40%",
+          },
+          "90%": {
+            bottom: "50%",
+            right: "25%",
+          },
+        },
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size, 300%) 0",
+          },
+        },
+        shine: {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
+      },
+      animation: {
+        gradient: "gradient 8s linear infinite",
+        shine: "shine var(--duration) infinite linear",
       },
     },
   },
