@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <section className="sections">
-      <div className="flex flex-col items-start container mb-15">
+      <div className="flex flex-col items-start container mb-15" id="contact-me">
         {/* Section Heading Animation */}
         <motion.h1
           className="section-heading"
