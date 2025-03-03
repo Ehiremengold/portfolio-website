@@ -52,7 +52,7 @@ export const projectData: ProjectData[] = [
       "Discover innovative financial solutions with our sleek and user-friendly fintech platform. Secure, efficient, and designed for growth.",
     img: projectImg.fintech,
     github: "https://github.com/Ehiremengold/borderless-landing-page.git",
-    liveURL: "borderless-landing-page-plum.vercel.app",
+    liveURL: "https://borderless-landing-page-plum.vercel.app",
   },
 
   {
