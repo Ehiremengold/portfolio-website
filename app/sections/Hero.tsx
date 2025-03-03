@@ -10,6 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-white  dark:bg-slate-950 font-poppins">
       <div className="relative isolate px-2 pt-14 lg:px-10">
+
         {/* Background Shape - Top */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -65,7 +66,7 @@ const Hero = () => {
             }}
             className="text-center"
           >
-            <h1 className="md:text-6xl/normal sm:text-4xl/normal text-3xl/normal dark:text-white font-semibold text-gray-900">
+            <h1 className="md:text-6xl/normal sm:text-4xl/normal text-3xl/normal dark:text-white font-semibold text-gray-900 mt-2">
               Bringing ideas to life, one&nbsp;
               <span className="text-primary">pixel</span> at a time.
             </h1>
@@ -95,7 +96,7 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <span className="text-4xl sm:text-5xl font-semibold text-center flex gap-1 items-center">
+            <span className="text-4xl sm:text-5xl font-semibold text-center flex items-center">
               <NumberTicker value={15} />+
             </span>
             <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center line-clamp-2">
@@ -112,7 +113,7 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <span className="text-4xl sm:text-5xl font-semibold text-center flex gap-1 items-center">
+            <span className="text-4xl sm:text-5xl font-semibold text-center flex items-center">
               <NumberTicker value={4} />+
             </span>
             <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center line-clamp-2">
@@ -129,7 +130,7 @@ const Hero = () => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <span className="text-4xl sm:text-5xl font-semibold text-center flex gap-1 items-center">
+            <span className="text-4xl sm:text-5xl font-semibold text-center flex items-center">
               <NumberTicker value={8} />+
             </span>
             <p className="subtle-text !text-base lg:!text-xl dark:text-white text-center">

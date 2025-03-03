@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <section className="sections">
       <div className="flex flex-col items-start container">
-        <h1 className="section-heading">Experience</h1>
+        <h1 className="section-heading">Work Experience</h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical timeline-centered">
           {experienceData.map((item, index) => {
             const { ref, inView } = useInView({
