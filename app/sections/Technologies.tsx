@@ -15,6 +15,7 @@ const frontendTools: string[] = [
   "SHADCN UI",
   "NEXT UI",
   "Material UI",
+  "Mantine",
 ];
 
 const backendTools: string[] = [
@@ -28,9 +29,11 @@ const backendTools: string[] = [
 const otherTools: string[] = [
   "Figma",
   "Clean Architecture",
+  "Nx mono repo",
   "Git",
   "Sentry",
   "Redux",
+  "Zustand",
   "Docker",
   "Postman",
   "SEO Optimization",
@@ -60,8 +63,6 @@ const Technologies = () => {
           stacks, refining my expertise in frontend, backend, and app
           development.
         </motion.p>
-
-      
 
         <div className="space-y-8 mt-6">
           {/* Frontend Tools */}
