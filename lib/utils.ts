@@ -84,7 +84,12 @@ export const projectData: ProjectData[] = [
 
 export const experienceData: ExperienceData[] = [
   {
-    title: "Stackwisr UK (Since June 2023)",
+    title: "SBSC (Since April 2025)",
+    description:
+      "Building upon set up NX mono repos, converting intiutive and engaging UIs to useful tools for organisations, home and abroad",
+  },
+  {
+    title: "Stackwisr UK (June 2024 - Jan 2025)",
     description:
       "Spearheaded the setup of multiple local workspaces for streamlined development and collaboration. Enhanced legacy React applications by refactoring components, fixing bugs, and optimizing UI/UX. Containerized Django projects using Docker, ensuring consistent and scalable environments. Managed version control on GitBucket, resolving merge conflicts and supporting efficient team integration.",
   },
