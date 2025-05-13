@@ -55,14 +55,23 @@ export const projectData: ProjectData[] = [
     liveURL: "https://borderless-landing-page-plum.vercel.app",
   },
 
-  // {
-  //   name: "Forcythe-clone",
-  //   description:
-  //     "A clone take home assigment for a mid-level frontend developer role",
-  //   img: projectImg.forcy,
-  //   github: "https://github.com/Ehiremengold/forycthe-clone.git",
-  //   liveURL: "https://forycthe-clone.vercel.app",
-  // },
+  {
+    name: "Forcythe-clone",
+    description:
+      "A clone take home assigment for a mid-level frontend developer role",
+    img: projectImg.forcy,
+    github: "https://github.com/Ehiremengold/forycthe-clone.git",
+    liveURL: "https://forycthe-clone.vercel.app",
+  },
+
+  {
+    name: "COL-LAB(collab)",
+    description:
+      "A real-time conversational app for teams in an organisation. Get updated on what your colleagueas are upto",
+    img: projectImg.collab,
+    github: "https://github.com/Ehiremengold/ui-deplyment.git",
+    liveURL: "https://sbsc-collab.vercel.app",
+  },
   // {
   //   name: "Career Launch Pad Landing Page",
   //   description:
