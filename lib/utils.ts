@@ -72,6 +72,14 @@ export const projectData: ProjectData[] = [
     github: "https://github.com/Ehiremengold/ui-deplyment.git",
     liveURL: "https://sbsc-collab.vercel.app",
   },
+  {
+    name: "N and H Construction",
+    description:
+      "A modern and responsive website built with React, Tailwind CSS and Strapi. It features a sleek design, smooth animations, and a user-friendly interface, showcasing the company's services and projects effectively.",
+    img: projectImg.nh,
+    github: "",
+    liveURL: "https://www.nandhconstructionco.com/"
+  }
   // {
   //   name: "Career Launch Pad Landing Page",
   //   description:

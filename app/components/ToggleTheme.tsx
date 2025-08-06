@@ -2,25 +2,18 @@
 import { useEffect, useState } from "react";
 
 const ToggleTheme = () => {
-  const [theme, setTheme] = useState<string | null>(null);
+  const [theme, setTheme] = useState<string>("dark");
 
   useEffect(() => {
-    // Ensure this runs only on the client
-    const storedTheme = localStorage.getItem("theme") || "light";
+    // Initialize theme from localStorage or default to dark
+    const storedTheme = localStorage.getItem("theme") || "dark";
     setTheme(storedTheme);
-    if (storedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
+    document.documentElement.classList.toggle("dark", storedTheme === "dark");
 
-  useEffect(() => {
+    // Update localStorage and DOM when theme changes
     if (theme) {
       localStorage.setItem("theme", theme);
-      if (theme === "dark") {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      document.documentElement.classList.toggle("dark", theme === "dark");
     }
   }, [theme]);
 
@@ -28,21 +21,22 @@ const ToggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-  if (!theme) return null; // Prevents SSR mismatch issues
+  if (!theme) return null;
 
   return (
     <button
       aria-label="Toggle Dark Mode"
-      className="flex group aspect-square cursor-pointer items-center justify-center rounded-xl text-black dark:text-white"
-      style={{ width: "50px" }}
+      className="flex group aspect-square cursor-pointer items-center justify-center rounded-xl text-black dark:text-white w-[50px]"
       onClick={toggleTheme}
     >
-      <div className="absolute whitespace-nowrap bg-slate-700 transition-all -top-12 text-white rounded-lg p-2 opacity-0 translate-y-20 pointer-events-none group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
+      <div
+        id="theme-tooltip"
+        role="tooltip"
+        className="absolute -top-12 whitespace-nowrap bg-slate-700 text-white rounded-lg p-2 opacity-0 translate-y-20 pointer-events-none group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100 transition-all"
+      >
         Toggle Theme
       </div>
-
       {theme === "light" ? (
-        // Moon icon for light mode
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -54,11 +48,11 @@ const ToggleTheme = () => {
           strokeLinecap="round"
           strokeLinejoin="round"
           className="lucide lucide-moon size-6"
+          aria-hidden="true"
         >
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       ) : (
-        // Sun icon for dark mode
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -70,6 +64,7 @@ const ToggleTheme = () => {
           strokeLinecap="round"
           strokeLinejoin="round"
           className="lucide lucide-sun size-6"
+          aria-hidden="true"
         >
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -85,4 +80,5 @@ const ToggleTheme = () => {
     </button>
   );
 };
+
 export default ToggleTheme;

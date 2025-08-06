@@ -21,14 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${poppins.variable} antialiased relative`}>
         <FloatNav />
         {children}
-        {/* <Script
-          src="../node_modules/flyonui/flyonui.js"
-          strategy="afterInteractive"
-        /> */}
       </body>
     </html>
   );

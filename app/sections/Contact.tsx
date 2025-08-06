@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <section className="sections">
-      <div className="flex flex-col items-start container mb-15" id="contact-me">
+      <div
+        className="flex flex-col items-start container mb-15"
+        id="contact-me"
+      >
         {/* Section Heading Animation */}
         <motion.h1
           className="section-heading"
@@ -31,7 +34,7 @@ const Contact = () => {
           {/* Email Contact Card */}
           <Link href="mailto:ehiremengold@gmail.com">
             <motion.div
-              className="py-6 px-8 dark:bg-secondary rounded-lg shadow-sm flex flex-col gap-5 items-start cursor-pointer"
+              className="py-6 px-8 dark:bg-secondary rounded-lg shadow-sm flex flex-col gap-3 items-start cursor-pointer"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
@@ -39,7 +42,7 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
             >
-              <span>Email</span>
+              <span className="font-semibold">Email</span>
               <p>ehiremengold@gmail.com</p>
             </motion.div>
           </Link>
@@ -51,7 +54,7 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <motion.div
-              className="py-6 px-5 dark:bg-secondary rounded-lg shadow-sm flex flex-col gap-5 items-start cursor-pointer"
+              className="py-6 px-5 dark:bg-secondary rounded-lg shadow-sm flex flex-col gap-3 items-start cursor-pointer"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
@@ -59,7 +62,7 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               whileHover={{ scale: 1.05 }}
             >
-              <span>Phone</span>
+              <span className="font-semibold">Phone</span>
               <p>+2348163355234</p>
             </motion.div>
           </Link>
