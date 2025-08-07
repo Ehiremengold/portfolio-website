@@ -3,7 +3,7 @@ import ToggleTheme from "./ToggleTheme";
 
 const FloatNav = () => {
   return (
-    <div className="fixed z-50 bottom-8 left-1/2 -translate-x-1/2 mx-auto mt-8 flex w-max gap-1 rounded-2xl border border-border p-2 shadow-md backdrop-blur-xl dark:ring-1 dark:ring-transparent dark:shadow-2xl supports-backdrop-blur:bg-white/40 supports-backdrop-blur:dark:bg-black/40 items-center">
+    <div className="h-[60px] fixed z-50 bottom-8 left-1/2 -translate-x-1/2 mx-auto mt-8 flex w-max gap-1 rounded-2xl border border-border p-2 shadow-md backdrop-blur-xl dark:ring-1 dark:ring-transparent dark:shadow-2xl supports-backdrop-blur:bg-white/40 supports-backdrop-blur:dark:bg-black/40 items-center">
       <div className="flex group aspect-square cursor-pointer items-center justify-center rounded-xl text-black transition-all dark:text-white w-[50px] hover:ml-3">
         <div
           id="home-tooltip"
@@ -125,7 +125,7 @@ const FloatNav = () => {
           </svg>
         </Link>
       </div>
-      <div className="shrink-0 bg-gray-900 w-[1px] h-full"></div>
+      <div className="border-l-black dark:border-l-white border h-full"></div>
       <ToggleTheme />
     </div>
   );
