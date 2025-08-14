@@ -22,6 +22,14 @@ type ProjectData = {
 
 export const projectData: ProjectData[] = [
   {
+    name: "Panto",
+    description:
+      "Need to get minimalistic interior products? Panto is the place to be. It features a clean and modern design, with a focus on showcasing products effectively.",
+    img: projectImg.panto,
+    github: "https://github.com/Ehiremengold/panto-ecommerce",
+    liveURL: "https://panto-ecommerce.vercel.app/",
+  },
+  {
     name: "Burgry Restaurant",
     description:
       "This Project would make you Crave juicy burgers! Enjoy fresh, 'Flavorful' micro-interactions and animations using framer motion and Tailwind css.",
@@ -46,14 +54,14 @@ export const projectData: ProjectData[] = [
     liveURL: "https://real-estate-nu-taupe.vercel.app",
   },
 
-  {
-    name: "Borderless | Fintech Landing Page",
-    description:
-      "Discover innovative financial solutions with our sleek and user-friendly fintech platform. Secure, efficient, and designed for growth.",
-    img: projectImg.fintech,
-    github: "https://github.com/Ehiremengold/borderless-landing-page.git",
-    liveURL: "https://borderless-landing-page-plum.vercel.app",
-  },
+  // {
+  //   name: "Borderless | Fintech Landing Page",
+  //   description:
+  //     "Discover innovative financial solutions with our sleek and user-friendly fintech platform. Secure, efficient, and designed for growth.",
+  //   img: projectImg.fintech,
+  //   github: "https://github.com/Ehiremengold/borderless-landing-page.git",
+  //   liveURL: "https://borderless-landing-page-plum.vercel.app",
+  // },
 
   {
     name: "Forcythe-clone",
@@ -78,8 +86,8 @@ export const projectData: ProjectData[] = [
       "A modern and responsive website built with React, Tailwind CSS and Strapi. It features a sleek design, smooth animations, and a user-friendly interface, showcasing the company's services and projects effectively.",
     img: projectImg.nh,
     github: "",
-    liveURL: "https://www.nandhconstructionco.com/"
-  }
+    liveURL: "https://www.nandhconstructionco.com/",
+  },
   // {
   //   name: "Career Launch Pad Landing Page",
   //   description:

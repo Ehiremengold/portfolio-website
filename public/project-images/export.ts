@@ -6,6 +6,7 @@ import fintech from "./fintech.png";
 import burgry from "./burgry.png";
 import collab from "./collab.png";
 import nh from "./nandh.png";
+import panto from "./panto.png";
 
 export const projectImg = {
   nike,
@@ -16,4 +17,5 @@ export const projectImg = {
   fintech,
   burgry,
   nh,
+  panto,
 };
