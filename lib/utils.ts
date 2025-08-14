@@ -88,14 +88,14 @@ export const projectData: ProjectData[] = [
     github: "",
     liveURL: "https://www.nandhconstructionco.com/",
   },
-  // {
-  //   name: "Career Launch Pad Landing Page",
-  //   description:
-  //     "Want to begin a career in tech? Look no further as we show you the ropes even if you want to remain...",
-  //   img: projectImg.stack,
-  //   github: "https://github.com/Ehiremengold/stackwisr-uk.git",
-  //   liveURL: "https://stackwisr-uk.vercel.app",
-  // },
+  {
+    name: "Career Launch Pad Landing Page",
+    description:
+      "Want to begin a career in tech? Look no further as we show you the ropes even if you want to remain...",
+    img: projectImg.stack,
+    github: "https://github.com/Ehiremengold/stackwisr-uk.git",
+    liveURL: "https://stackwisr-uk.vercel.app",
+  },
 ];
 
 export const experienceData: ExperienceData[] = [
