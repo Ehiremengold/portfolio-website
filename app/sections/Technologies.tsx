@@ -20,8 +20,10 @@ const frontendTools: string[] = [
 
 const backendTools: string[] = [
   "Django",
+  "Express",
   "REST API",
   "PostgreSQL",
+  "MongoDB",
   "AWS",
   "Digital Ocean",
 ];

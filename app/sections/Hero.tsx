@@ -10,7 +10,6 @@ const Hero = () => {
   return (
     <section className="bg-white  dark:bg-slate-950 font-poppins">
       <div className="relative isolate px-2 pt-14 lg:px-10">
-
         {/* Background Shape - Top */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -67,21 +66,20 @@ const Hero = () => {
             className="text-center"
           >
             <h1 className="md:text-6xl/normal sm:text-4xl/normal text-3xl/normal dark:text-white font-semibold text-gray-900 mt-2">
-              Bringing ideas to life, one&nbsp;
+              Bringing ideas to life, one
               <span className="text-primary">pixel</span> at a time.
             </h1>
             {/* <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
               Ship <AuroraText>beautiful</AuroraText>
             </h1> */}
             <p className="dark:text-white subtle-text text-black !mt-6">
-              Hey there! I’m a front-end developer who loves turning creative
-              ideas into vibrant, user-friendly websites. If you’re ready to
+              Hey there! I’m a software engineer who loves turning creative
+              ideas into vibrant, user-friendly products. If you’re ready to
               make a real splash online, let’s team up and bring your vision to
               life.
             </p>
 
             <ScrollToContact />
-            
           </motion.div>
         </div>
 
