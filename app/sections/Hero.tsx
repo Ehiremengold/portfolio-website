@@ -67,7 +67,7 @@ const Hero = () => {
           >
             <h1 className="md:text-6xl/normal sm:text-4xl/normal text-3xl/normal dark:text-white font-semibold text-gray-900 mt-2">
               Bringing ideas to life, one
-              <span className="text-primary">pixel</span> at a time.
+              <span className="text-primary"> pixel</span> at a time.
             </h1>
             {/* <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
               Ship <AuroraText>beautiful</AuroraText>
