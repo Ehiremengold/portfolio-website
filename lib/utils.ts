@@ -100,7 +100,7 @@ export const projectData: ProjectData[] = [
 
 export const experienceData: ExperienceData[] = [
   {
-    title: "SBSC (Since April 2025)",
+    title: "SBSC (June 2025 - Sept 2025)",
     description:
       "Building upon set up NX mono repos, converting intiutive and engaging UIs to useful tools for organisations, home and abroad",
   },
@@ -115,7 +115,7 @@ export const experienceData: ExperienceData[] = [
       "Led the development of high-performance web applications, aligning architecture with business needs. Collaborated cross-functionally to deliver user-centric features. Diagnosed and resolved critical system issues to maintain high uptime. Implemented Sentry for real-time error tracking and automated CI/CD pipelines using GitHub Actions, accelerating deployment cycles and maintaining code quality.",
   },
   {
-    title: "Nigerian Ports Authority (June 2018 - January 2019)",
+    title: "Nigerian Ports Authority (June 2018 - Jan 2019)",
     description:
       "Gained foundational experience in web development while providing IT support and maintaining software functionality. Ensured smooth operations by setting up new systems for incoming staff and troubleshooting software issues for team members. Took initiative to learn web development, leading to the creation of my first website before leaving the company. This role laid the groundwork for my journey into software engineering and enhanced my problem-solving and technical support skills.",
   },
